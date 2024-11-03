@@ -609,3 +609,11 @@ func parseSignature(in []byte) (out *Signature, rest []byte, ok bool) {
 	}
 	return
 }
+
+func ParseSignatureBody(in []byte) (*Signature, []byte, bool) {
+	return parseSignatureBody(in)
+}
+
+func ParseSignature(in []byte) (*Signature, []byte, bool) {
+	return parseSignature(in)
+}
